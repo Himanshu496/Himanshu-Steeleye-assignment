@@ -1,0 +1,16 @@
+Error first : 
+in line no 35 
+change 
+  const [setSelectedIndex,selectedIndex] = useState();
+into 
+  const [selectedIndex,setSelectedIndex] = useState(null);
+
+Error Second : 
+in line no 60 
+change 
+  items: PropTypes.array(PropTypes.shapeOf({
+into 
+  items: PropTypes.arrayOf(PropTypes.shapeOf({
+
+array into arrayOf:
+
