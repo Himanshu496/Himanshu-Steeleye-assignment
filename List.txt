@@ -1,0 +1,16 @@
+List: is also a memoized component that renders a list of items. 
+It takes one prop as input: items. The items prop is an array of objects,
+ where each object represents a single list item.
+
+List uses the useState hook to keep track of the index of the currently selected item.
+ It uses the useEffect hook to reset the selected index whenever the items prop changes.
+  It also defines a handleClick function that is called when an item is clicked. 
+  This function updates the selected index state variable to the index of the clicked item.
+
+The List component maps over the items prop and renders a SingleListItem for each item in the list.
+ It passes the text, isSelected, and onClickHandler props to each SingleListItem. 
+ It also passes the index prop as the key prop to ensure each item is uniquely identified by React. 
+ When an item is clicked, the handleClick function is called with the index of the clicked item, 
+ which updates the selected index state variable.
+ Finally, the isSelected prop is passed to each SingleListItem to indicate whether it is currently selected,
+ which changes the background color of the item to green or red accordingly.
